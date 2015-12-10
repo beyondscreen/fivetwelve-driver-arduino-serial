@@ -1,0 +1,20 @@
+{
+  "name": "fivetwelve-driver-arduino-serial",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel/register test/{**/,}*Test.js",
+    "prepublish": "babel -d lib-es5 lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.34",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.4"
+  }
+}
