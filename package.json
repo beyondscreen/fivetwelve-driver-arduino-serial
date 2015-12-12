@@ -1,19 +1,36 @@
 {
   "name": "fivetwelve-driver-arduino-serial",
   "version": "0.1.1",
-  "description": "",
+  "description": "DMX-Driver for the fivetwelve-library that uses an Arduino to generate a DMX-Signal.",
+  "keywords": [
+    "dmx",
+    "dmx512",
+    "fivetwelve",
+    "fivetwelve-driver",
+    "arduino"
+  ],
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register test/{**/,}*Test.js",
-    "prepublish": "babel -d lib-es5 lib"
+    "test": "mocha --compilers js:babel/register test/*Test.js && eslint lib/ test/",
+    "compile": "babel -d lib-es5 lib",
+    "prepublish": "npm run test && npm run compile"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Martin Schuhfuss <m.schuhfuss@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/beyondscreen/fivetwelve-driver-arduino-serial",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyondscreen/fivetwelve-driver-arduino-serial"
+  },
+  "bugs": {
+    "url": "https://github.com/beyondscreen/fivetwelve-driver-arduino-serial/issues"
+  },
   "devDependencies": {
     "babel": "^5.8.34",
+    "eslint": "^1.10.3",
     "expect.js": "^0.3.1",
     "mocha": "^2.3.4"
   }
