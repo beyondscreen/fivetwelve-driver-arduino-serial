@@ -1,6 +1,6 @@
 {
   "name": "fivetwelve-driver-arduino-serial",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DMX-Driver for the fivetwelve-library that uses an Arduino to generate a DMX-Signal.",
   "keywords": [
     "dmx",
