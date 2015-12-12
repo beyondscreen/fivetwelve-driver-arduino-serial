@@ -1,3 +1,1 @@
-import DmxSerialDriver from './lib/DmxSerialDriver';
-
-export default DmxSerialDriver;
+export {default as DmxSerialDriver} from './lib/DmxSerialDriver';
